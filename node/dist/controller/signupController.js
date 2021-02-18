@@ -4,10 +4,13 @@ exports.signupController = void 0;
 exports.signupController = (req, res) => {
     const data = {
         title: 'Authentication',
-        action: 'Set SignUp Your Data',
+        pageGuide: {
+            pageRef: 'Set SignUp Your Data',
+            pageAction: 'Register'
+        },
         link: {
             href: './signin',
-            text: 'retrun Login page'
+            text: 'Retrun Login page'
         }
     };
     res.render('../views/signup.ejs', data);

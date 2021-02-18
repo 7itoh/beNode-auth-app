@@ -1,16 +1,22 @@
-import { RequestHandler } from 'express';
+import { RequestHandler, Response, Request } from 'express';
 
-export const signinController: RequestHandler = (req, res) => {
+export const signinController: RequestHandler = (req:Request, res:Response) => {
     const data: {
         title: string,
-        action: string,
+        pageGuide: {
+            pageRef: string,
+            pageAction: string,
+        }
         link: {
             href: string,
             text: string
         },
     } = {
         title: 'Login',
-        action: 'Set Your Email/Passwd',
+        pageGuide: {
+            pageRef: 'Set Your Email/Passwd',
+            pageAction: 'Click',
+        },
         link: {
             href: './signup',
             text: 'Forgot Your Password?'

@@ -25,9 +25,9 @@
         </section>
         <section>
             <fieldset>
-                <legend>Set SignUp Your Data</legend>
+                <legend><%= pageGuide.pageRef%></legend>
                 <br>
-                <%- include('./elements/signupForm.ejs')%>
+                <%- include('./elements/signupForm.ejs', pageGuide)%>
                 <section>
                     <%- include('./elements/baseLink.ejs', link)%>
                 </section>

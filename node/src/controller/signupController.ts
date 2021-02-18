@@ -1,19 +1,25 @@
-import { RequestHandler } from 'express';
+import { RequestHandler, Request, Response } from 'express';
 
-export const signupController: RequestHandler = (req, res) => {
+export const signupController: RequestHandler = (req: Request, res: Response) => {
     const data:  { 
         title: string,
-        action: string,
+        pageGuide: {
+            pageRef: string,
+            pageAction: string,
+        }
         link: {
             href: string,
             text: string
         },
     }= {
         title: 'Authentication',
-        action: 'Set SignUp Your Data',
+        pageGuide: {
+            pageRef: 'Set SignUp Your Data',
+            pageAction: 'Register'
+        },
         link: {
             href: './signin',
-            text: 'retrun Login page'
+            text: 'Retrun Login page'
         }
     }
     res.render('../views/signup.ejs', data);

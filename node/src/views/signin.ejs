@@ -25,9 +25,9 @@
         </section>
         <section>
             <fieldset>
-                <legend><%= action %></legend>
+                <legend><%= pageGuide.pageRef %></legend>
                 <br>
-                <%- include("./elements/signinForm.ejs")%>
+                <%- include("./elements/signinForm.ejs", pageGuide)%>
                 <section>
                     <%- include("./elements/baseLink.ejs", link)%>
                 </section>

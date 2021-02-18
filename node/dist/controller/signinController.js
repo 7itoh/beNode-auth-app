@@ -4,7 +4,10 @@ exports.signinController = void 0;
 exports.signinController = (req, res) => {
     const data = {
         title: 'Login',
-        action: 'Set Your Email/Passwd',
+        pageGuide: {
+            pageRef: 'Set Your Email/Passwd',
+            pageAction: 'Click',
+        },
         link: {
             href: './signup',
             text: 'Forgot Your Password?'
