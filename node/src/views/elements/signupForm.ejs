@@ -1,0 +1,24 @@
+<form action="" method="POST">
+    <section>
+        <label for="name">Name
+            <input type="text" name="name" id="inptUserName">
+        </label>
+    </section>
+    <section>
+        <label for="email">E-Mail Address
+            <input type="email" name="email" id="inptUserEmail">
+        </label>
+    </section>
+    <section>
+        <label for="password">password
+            <input type="password" name="password" id="inptUserPasswd">
+        </label>
+    </section>
+    <section>
+        <label for="confirmPassword">Confirm password
+            <input type="password" name="confirmPassword" id="inptUserConfmPasswd">
+        </label>
+    </section>
+    <br>
+    <%- include('./baseButton.ejs', pageGuide)%>
+</form>
