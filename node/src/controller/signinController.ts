@@ -1,6 +1,6 @@
 import { RequestHandler, Response, Request } from 'express';
 
-export const signinController: RequestHandler = (req:Request, res:Response) => {
+export const signinController: RequestHandler = (req:Request, res:Response):void => {
     const data: {
         title: string,
         pageGuide: {

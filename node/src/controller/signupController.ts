@@ -1,6 +1,6 @@
 import { RequestHandler, Request, Response } from 'express';
 
-export const signupController: RequestHandler = (req: Request, res: Response) => {
+export const signupController: RequestHandler = (req: Request, res: Response):void => {
     const data:  { 
         title: string,
         pageGuide: {
